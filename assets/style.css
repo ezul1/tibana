@@ -1,19 +1,56 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
 
 body {
-    background-color: rgb(63, 83, 99);
     display: block;
     text-align: center;
     font-family: 'Ubuntu', sans-serif;
+    background: linear-gradient(
+        to right,
+        #6f7280,
+        #2a2c3c,
+        #181827,
+        #833ab4,
+        #fd1d1d,
+        #fcb045
+      );
+      background-size: 400% 400%;
+      animation: body 10s infinite ease-in-out;
 }
 
 h1 {
     font-family: 'Ubuntu', sans-serif;
+    color: white;
     font-size: 42px;
+    font-weight: bold;
+}
+
+h2 {
+    padding: 10px 0 5px;
+    color: white;
 }
 
 .responsive {
     width: 250px;
-    border: 10px solid rgb(9, 8, 8);
+    border: 5px solid rgb(255, 255, 255);
     border-radius: 550px;
+    opacity: 0.8;
 }
+
+.responsive:hover {
+    opacity: 1;
+}
+
+
+
+@keyframes body {
+    0% {
+      background-position: 0 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0 50%;
+    }
+  }
+  
